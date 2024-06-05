@@ -26,10 +26,10 @@ int main()
 
     srand(time(NULL));
     std::vector<int> ve(10000);
-    std::generate(ve.begin(), ve.end(), random_); //??
+    std::generate(ve.begin(), ve.end(), random_);
   
     Span s = Span(10000);
-    s.loop(ve);
+    s.addNumbers(ve);
     std::cout << s.shortestSpan() << std::endl;
     std::cout << s.longestSpan() << std::endl;
     

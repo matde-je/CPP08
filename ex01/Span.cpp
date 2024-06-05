@@ -48,7 +48,7 @@ int Span::longestSpan() {
 }
 
  //fill your Span using a range of iterators
-void Span::loop(std::vector<int> &num) {
+void Span::addNumbers(std::vector<int> &num) {
     if (num.size() > max || (vec.size() + num.size()) > max)
         throw (std::out_of_range("Container full"));
     if (vec.empty()) 
