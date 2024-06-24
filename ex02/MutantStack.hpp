@@ -14,7 +14,7 @@ class MutantStack : public std::stack<T>
 {
     public:
     
-        typedef	typename	std::stack<T>::container_type::iterator iterator;
+        typedef	typename	std::stack<T>::container_type::iterator iterator;  //defines a new type alias called iterator
         MutantStack();
 	    ~MutantStack();
         MutantStack(const MutantStack& other);
